@@ -1,4 +1,4 @@
-require( 'Constants' )
+local Constants = require('Constants')
 
 function love.conf(t)
     t.title = "Pong"

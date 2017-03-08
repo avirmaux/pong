@@ -1,8 +1,8 @@
 -- LÖVE PONG
 
-require( 'Ball' )
-require( 'Bar' )
-require( 'Constants' )
+local Constants = require('Constants')
+require('Ball')
+require('Bar')
 
 --
 -- Loading
@@ -76,7 +76,7 @@ function love.draw()
     if ball.win ~= nil then
         local fontsize = 25
         local font = love.graphics.newFont(fontsize)
-        local sentence = "Player " .. ball.win .. " won!",
+        local sentence = "Player " .. ball.win .. " won!"
         love.graphics.setFont(font)
         love.graphics.setColor(224, 224, 224, 255)
 

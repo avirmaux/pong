@@ -4,7 +4,7 @@
 --
 -- position: 2D vector (x, y)
 -- speed: 2D vector (vx, vy)
-require( 'Constants' )
+local Constants = require('Constants')
 
 Ball = {}
 Ball.__index = Ball

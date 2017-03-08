@@ -1,6 +1,6 @@
 -- Bar
 --
-require( 'Constants' )
+local Constants = require('Constants')
 
 Bar = {}
 Bar.__index = Bar

@@ -1,3 +1,5 @@
 A simple PONG game for two players.
 
-Toy project for Lua and Love 2D
+Toy project for Lua and Love 2D.
+
+![Pong](img/pong.png)

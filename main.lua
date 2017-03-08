@@ -20,13 +20,11 @@ function love.load()
     ball = Ball.new(position, speed)
 
     -- Bar
-    local bar_height = 100
-    local bar_width = 15
     -- West bar
-    bar_west = Bar.new(0, bar_width, bar_height,
+    bar_west = Bar.new(0, Constants.bar_width, Constants.bar_height,
         {up="w", down="s"})
     -- East bar
-    bar_east = Bar.new(Constants.WIN_WIDTH - bar_width, bar_width, bar_height,
+    bar_east = Bar.new(Constants.WIN_WIDTH - Constants.bar_width, Constants.bar_width, Constants.bar_height,
         {up="up", down="down"})
 end
 
@@ -40,8 +38,7 @@ function love.update(dt)
     bar_west:update(dt)
 
     -- Collision ball / bar?
-    local degree_max_abs = 70
-    local radian_max_abs = degree_max_abs * math.pi/180
+    local radian_max_abs = Constants.degree_max_abs * math.pi/180
     -- West
     if  ball.position.x - ball.radius <= bar_west.width and
         ball.position.y >= bar_west.ypos and

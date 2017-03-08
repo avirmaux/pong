@@ -19,8 +19,7 @@ function Ball.new(position, speed)
     self.speed = speed
 
     -- Graphics options
-    self.radius = 12
-    self.segments = 50
+    self.radius = Constants.ball_radius
 
     self.win = nil
 
@@ -71,5 +70,5 @@ function Ball:update(dt)
 end
 
 function Ball:draw()
-    love.graphics.circle("fill", self.position.x, self.position.y, self.radius, self.segments)
+    love.graphics.circle("fill", self.position.x, self.position.y, self.radius)
 end
